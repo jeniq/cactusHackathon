@@ -1,1 +1,2 @@
-No team: Ivanov Mikhail Maximovich - android developer, UI.
+No team :(
+Ivanov Mikhail Maximovich - android developer (java), UI.
