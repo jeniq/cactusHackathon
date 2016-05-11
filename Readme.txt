@@ -1,0 +1,1 @@
+No team: Ivanov Mikhail Maximovich - android developer, UI.
