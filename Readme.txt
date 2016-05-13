@@ -6,3 +6,6 @@ members:
 
 project:
 app for GYM. More info on hackathon)
+
+Contacts:
+mykhivanov@gmail.com - Mykhailo Ivanov.
