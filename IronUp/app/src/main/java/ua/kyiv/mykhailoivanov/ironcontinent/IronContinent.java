@@ -59,6 +59,10 @@ public class IronContinent extends Activity {
 
 
 
+        // TEST SAVING
+        SaveNLoad.activity = this;
+//        SaveNLoad.saveGym("FitnessLife");
+        //
         newsMenu = new NewsMenu(this);
         statisticsMenu = new StatisticsMenu(this);
         gymMenu = new GymMenu(this);

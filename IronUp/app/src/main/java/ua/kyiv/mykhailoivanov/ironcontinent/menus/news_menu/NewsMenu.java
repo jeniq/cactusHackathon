@@ -31,4 +31,5 @@ public class NewsMenu {
         newsMenuLay = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.news_menu, null);
         holeLay.addView(newsMenuLay);
     }
+
 }
