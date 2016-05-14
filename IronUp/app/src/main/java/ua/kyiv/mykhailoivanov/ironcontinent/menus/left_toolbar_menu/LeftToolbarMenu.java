@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import ua.kyiv.mykhailoivanov.ironcontinent.IronContinent;
 import ua.kyiv.mykhailoivanov.ironcontinent.R;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.GymListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.NewsFeedListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.StatisticsListener;
 
@@ -26,6 +27,7 @@ public class LeftToolbarMenu {
     private Button button;
     private NewsFeedListener newsFeedListener;
     private StatisticsListener statisticsListener;
+    private GymListener gymListener;
     private IronContinent ironContinent;
 
     public LeftToolbarMenu(Activity activityIn, IronContinent ironContinentIn)
@@ -40,12 +42,16 @@ public class LeftToolbarMenu {
 
         newsFeedListener = new NewsFeedListener(ironContinent.getNewsMenu());
         statisticsListener = new StatisticsListener(ironContinent.getStatisticsMenu());
+        gymListener = new GymListener(ironContinent.getGymMenu());
 
         button = (Button) activity.findViewById(R.id.newsFeedButtonID);
         button.setOnClickListener(newsFeedListener);
 
         button = (Button) activity.findViewById(R.id.statisticsButtonID);
         button.setOnClickListener(statisticsListener);
+
+        button = (Button) activity.findViewById(R.id.gymListButtonID);
+        button.setOnClickListener(gymListener);
 
         // @TODO: FINISH 3 MENUS
     }
