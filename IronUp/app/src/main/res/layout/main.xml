@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    tools:context="ua.kyiv.mykhailoivanov.ironcontinent.IronContinent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ua.kyiv.mykhailoivanov.ironcontinent.IronContinent">
+    android:layout_width="match_parent"
+    android:orientation="vertical">
 
-    <Fragment
-        ></Fragment>
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sliderButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/toolbarFragmentID"
+            class="ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu.LeftToolbarMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></fragment>
+        <fragment
+            android:id="@+id/changedFragmentID"
+            class="ua.kyiv.mykhailoivanov.ironcontinent.menus.FragmentChanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></fragment>
+    </LinearLayout>
+
+
+
+</LinearLayout>
