@@ -14,6 +14,7 @@ import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingHandler;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingThread;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu.LeftToolbarMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.statistics_menu.StatisticsMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.SliderButtonListener;
 
 public class IronContinent extends Activity {
@@ -26,6 +27,18 @@ public class IronContinent extends Activity {
     private SlidingThread slidingThread;
 
     private NewsMenu newsMenu;
+    private StatisticsMenu statisticsMenu;
+
+    public NewsMenu getNewsMenu()
+    {
+        return newsMenu;
+    }
+
+    public StatisticsMenu getStatisticsMenu()
+    {
+        return statisticsMenu;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +49,7 @@ public class IronContinent extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         newsMenu = new NewsMenu(this);
+        statisticsMenu = new StatisticsMenu(this);
 
         theLayout = (TheLayout) getLayoutInflater().inflate(R.layout.main, null);
         theLayout.setActivity(this, getWindowManager().getDefaultDisplay().getWidth());
@@ -46,7 +60,7 @@ public class IronContinent extends Activity {
         sliderButtonListener = new SliderButtonListener();
 
         sliderButton.setOnClickListener(sliderButtonListener);
-        leftToolbarMenu = new LeftToolbarMenu(this, newsMenu);
+        leftToolbarMenu = new LeftToolbarMenu(this, this);
 
         slidingHandler = new SlidingHandler(theLayout, this.getWindowManager().getDefaultDisplay().getWidth());
         slidingThread  = new SlidingThread(slidingHandler);

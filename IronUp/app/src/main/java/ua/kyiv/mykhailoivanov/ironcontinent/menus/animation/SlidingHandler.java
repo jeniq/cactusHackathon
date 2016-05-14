@@ -15,7 +15,7 @@ public class SlidingHandler extends Handler {
     public SlidingHandler(TheLayout layoutIn, int width)
     {
         theLayout = layoutIn;
-        slidingValue = width/30;
+        slidingValue = (int) ((0.8*width)/30);
     }
 
     public void handleMessage(android.os.Message message)

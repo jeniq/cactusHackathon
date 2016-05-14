@@ -55,7 +55,7 @@ public class TheLayout extends LinearLayout {
             calculateChildDimensions();
 
 
-        otherView.layout(left + (int)(menuMargin/0.2), top,  right + (int)(menuMargin/0.2), bottom);
+        otherView.layout(left + (int)(0.8*menuMargin/0.2), top,  right + (int)(0.8*menuMargin/0.2), bottom);
         toolbarView.layout(left, top, right, bottom);
 
     }

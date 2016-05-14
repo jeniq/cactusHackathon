@@ -8,21 +8,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/newsFeedButtonID"
-        />
+        android:text="news"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statisticsButtonID"
+        android:text="statistics"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/gymListButtonID"/>
+        android:id="@+id/gymListButtonID"
+        android:text="gymList"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/trainButtonID"/>
+        android:id="@+id/trainButtonID"
+        android:text="train"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/statisticsButtonID"/>
+
 
 </LinearLayout>

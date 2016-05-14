@@ -1,23 +1,20 @@
-package ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu;
+package ua.kyiv.mykhailoivanov.ironcontinent.menus.statistics_menu;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.R;
-import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.NewsFeedListener;
 
 /**
  * Created by MykhailoIvanov on 5/14/2016.
  */
-public class NewsMenu {
+public class StatisticsMenu {
     private Activity activity;
-    private LinearLayout newsMenuLay;
+    private LinearLayout statisticsMenuLay;
     private LinearLayout holeLay;
 
-    public NewsMenu(Activity activityIn)
+    public StatisticsMenu(Activity activityIn)
     {
         activity = activityIn;
     }
@@ -28,7 +25,7 @@ public class NewsMenu {
         holeLay = (LinearLayout) activity.findViewById(R.id.contentMenusID);
         holeLay.removeAllViews();
 
-        newsMenuLay = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.news_menu, null);
-        holeLay.addView(newsMenuLay);
+        statisticsMenuLay = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.statistics_menu, null);
+        holeLay.addView(statisticsMenuLay);
     }
 }
