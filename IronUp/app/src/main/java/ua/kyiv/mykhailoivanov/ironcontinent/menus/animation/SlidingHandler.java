@@ -1,7 +1,6 @@
 package ua.kyiv.mykhailoivanov.ironcontinent.menus.animation;
 
 import android.os.Handler;
-import android.view.View;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.TheLayout;
 
@@ -24,17 +23,13 @@ public class SlidingHandler extends Handler {
         switch (message.what)
         {
             case 0:
-                theLayout.otherView.setVisibility(View.VISIBLE);
-                theLayout.otherView.offsetLeftAndRight(-slidingValue);
-                theLayout.cameraView.offsetLeftAndRight(-slidingValue);
-                theLayout.whichWayToSlide = 1;
+                theLayout.otherView.offsetLeftAndRight(slidingValue);
+                theLayout.toolbarView.offsetLeftAndRight(slidingValue);
                 theLayout.postInvalidate();
                 break;
             case 1:
-                theLayout.otherView.setVisibility(View.VISIBLE);
-                theLayout.otherView.offsetLeftAndRight(slidingValue);
-                theLayout.cameraView.offsetLeftAndRight(slidingValue);
-                theLayout.whichWayToSlide = 0;
+                theLayout.otherView.offsetLeftAndRight(-slidingValue);
+                theLayout.toolbarView.offsetLeftAndRight(-slidingValue);
                 theLayout.postInvalidate();
                 break;
         }

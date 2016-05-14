@@ -1,58 +1,39 @@
 package ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.R;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.NewsFeedListener;
 
 /**
  * Created by MykhailoIvanov on 5/14/2016.
  */
-public class LeftToolbarMenu extends Fragment {
+public class LeftToolbarMenu {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    private LinearLayout linearLayout;
+    private Activity activity;
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.lefttoolbar, null);
-    }
+    private Button button;
+    private NewsFeedListener newsFeedListener;
 
-    public void onActivityCreated(Bundle savedInstanceState)
+    public LeftToolbarMenu(Activity activityIn, NewsMenu nm)
     {
-        super.onActivityCreated(savedInstanceState);
-    }
+        activity = activityIn;
+        linearLayout = (LinearLayout) activity.findViewById(R.id.leftToolbarLayoutID);
+        View view = LayoutInflater.from(activity).inflate(R.layout.lefttoolbar, null);
+        linearLayout.addView(view);
 
-    public void onStart() {
-        super.onStart();
-    }
+        button = (Button) activity.findViewById(R.id.newsFeedButtonID);
 
-    public void onResume() {
-        super.onResume();
-
-    }
-
-    public void onPause() {
-        super.onPause();
-    }
-
-    public void onStop() {
-        super.onStop();
-    }
-
-    public void onDestroyView() {
-        super.onDestroyView();
-    }
-
-    public void onDestroy() {
-        super.onDestroy();
-    }
-
-    public void onDetach() {
-        super.onDetach();
+        newsFeedListener = new NewsFeedListener(nm);
+        button.setOnClickListener(newsFeedListener);
     }
 }

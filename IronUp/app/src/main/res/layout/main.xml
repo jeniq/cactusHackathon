@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ua.kyiv.mykhailoivanov.ironcontinent.IronContinent"
+<ua.kyiv.mykhailoivanov.ironcontinent.TheLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/sliderButton"/>
-    </LinearLayout>
+            android:id="@+id/sliderButton"
+            android:text="slider"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <fragment
-            android:id="@+id/toolbarFragmentID"
-            class="ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu.LeftToolbarMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></fragment>
-        <fragment
-            android:id="@+id/changedFragmentID"
-            class="ua.kyiv.mykhailoivanov.ironcontinent.menus.FragmentChanger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></fragment>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/leftToolbarLayoutID"
+            android:background="#1AC000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id = "@+id/contentMenusID"
+                android:orientation="vertical"
+                android:background="#FF0000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="menus"/>
+            </LinearLayout>
+
+
     </LinearLayout>
 
 
 
-</LinearLayout>
+
+
+</ua.kyiv.mykhailoivanov.ironcontinent.TheLayout>
