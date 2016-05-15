@@ -56,10 +56,16 @@ public class LeftToolbarMenu {
 
         button = (Button) activity.findViewById(R.id.gymListButtonID);
         button.setOnClickListener(gymListener);
+        if (IronContinent.isAdmin)
+        {
+            button.setVisibility(View.GONE);
+        }
 
         button = (Button) activity.findViewById(R.id.trainButtonID);
         button.setOnClickListener(trainListener);
-
-        // @TODO: FINISH 3 MENUS
+        if (IronContinent.isAdmin)
+        {
+            button.setVisibility(View.GONE);
+        }
     }
 }

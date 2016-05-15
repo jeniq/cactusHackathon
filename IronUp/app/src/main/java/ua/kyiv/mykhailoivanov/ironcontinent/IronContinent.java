@@ -3,6 +3,7 @@ package ua.kyiv.mykhailoivanov.ironcontinent;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -58,6 +59,7 @@ public class IronContinent extends Activity {
 
 
     private Entry entry;
+    public static boolean isAdmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,5 +113,9 @@ public class IronContinent extends Activity {
         notificationButtonListener = new NotificationButtonListener(this, notificationFragment);
         button = (Button) findViewById(R.id.notificationsButton);
         button.setOnClickListener(notificationButtonListener);
+        if (isAdmin)
+        {
+            button.setVisibility(View.GONE);
+        }
     }
 }

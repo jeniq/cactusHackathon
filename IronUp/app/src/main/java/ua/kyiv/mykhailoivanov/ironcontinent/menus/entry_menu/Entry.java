@@ -31,6 +31,7 @@ public class Entry {
     }
 
     void enterToApp(boolean admin){
+        IronContinent.isAdmin = admin;
         ironContinent.startApp();
     }
 
