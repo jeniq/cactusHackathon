@@ -21,7 +21,7 @@
         android:gravity="left|center"
         android:textColor="#FAFAFA"
         android:layout_marginLeft = "0dp"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:background="@drawable/toolbarbuttonspic"/>
     <Button
         android:layout_width="match_parent"
@@ -38,9 +38,9 @@
         android:layout_height="wrap_content"
         android:gravity="left|center"
         android:id="@+id/gymListButtonID"
-        android:text="  GymList"
+        android:text="  Gym list"
         android:textColor="#FAFAFA"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:background="@drawable/toolbarbuttonspic"/>
 
     <Button
@@ -49,8 +49,8 @@
         android:id="@+id/trainButtonID"
         android:gravity="left|center"
         android:textColor="#FAFAFA"
-        android:textSize="20sp"
-        android:text="  train"
+        android:textSize="22sp"
+        android:text="  Training"
         android:background="@drawable/toolbarbuttonspic"/>
 
 
