@@ -22,7 +22,7 @@
         android:textColor="#FAFAFA"
         android:layout_marginLeft = "0dp"
         android:textSize="20sp"
-        android:background="#BDBDBD"/>
+        android:background="@drawable/toolbarbuttonspic"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,17 +31,17 @@
         android:text="  Statistics"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
-        android:background="#BDBDBD"/>
+        android:background="@drawable/toolbarbuttonspic"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center"
         android:id="@+id/gymListButtonID"
-        android:text="  GymList"
+        android:text="  Gym list"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
-        android:background="#BDBDBD"/>
+        android:background="@drawable/toolbarbuttonspic"/>
 
     <Button
         android:layout_width="match_parent"
@@ -50,8 +50,8 @@
         android:gravity="left|center"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
-        android:text="  train"
-        android:background="#BDBDBD"/>
+        android:text="  training"
+        android:background="@drawable/toolbarbuttonspic"/>
 
 
 
