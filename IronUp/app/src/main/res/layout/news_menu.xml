@@ -17,7 +17,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#E0E0E0"
+                android:background="#EEEEEE"
                 android:orientation="vertical"
                 android:paddingBottom="4dp">
 
@@ -39,24 +39,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="#E0E0E0"
+                android:background="#EEEEEE"
                 android:orientation="vertical">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:text="TestNews"
-                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="2dp"
                         android:layout_marginTop="4dp"
-                        android:text="Text34 444 44444444444 444444"
+                        android:text="At Life Time — the premier destination for health and fitness — we are committed to providing the best trainers and training programs to help you achieve more than you ever thought possible."
                         android:textSize="20sp" />
             </LinearLayout>
 
@@ -65,14 +56,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="#E0E0E0"
+                android:background="#EEEEEE"
                 android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Text12 3123 3 asd as asd as"
+                android:text="Experience the healthy way of life."
                 android:textSize="20sp" />
 
             <TextView
@@ -85,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Tex t1asd 2 3123 3 asd as asd as"
+                android:text="Life Time Fitness is dedicated to helping you achieve your total health objectives, athletic aspirations and fitness goals. "
                 android:textSize="20sp" />
             </LinearLayout>
 

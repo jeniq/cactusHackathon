@@ -11,7 +11,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#F5F5F5"
-        android:text="new Training"
+        android:text="New training"
         android:textColor="#424242"
         android:textSize="22sp" />
 

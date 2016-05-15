@@ -79,6 +79,7 @@ public class IronContinent extends Activity {
 
     public void startApp()
     {
+
         // TEST SAVING
         SaveNLoad.activity = this;
 //        SaveNLoad.saveGym("SportLife");
@@ -117,5 +118,7 @@ public class IronContinent extends Activity {
         {
             button.setVisibility(View.GONE);
         }
+
+
     }
 }
