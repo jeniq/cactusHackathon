@@ -25,7 +25,7 @@ public class StatisticsMenu {
         holeLay = (LinearLayout) activity.findViewById(R.id.contentMenusID);
         holeLay.removeAllViews();
 
-        statisticsMenuLay = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.statistics_menu, null);
+        statisticsMenuLay = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.all_statistic_layout, null);
         holeLay.addView(statisticsMenuLay);
     }
 }

@@ -58,6 +58,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/gym1"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Tex t1asd 2 3123 3 asd as asd as"
                 android:background="#AABDBD"
                 android:textSize="20sp"

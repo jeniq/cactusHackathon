@@ -4,5 +4,5 @@
         android:drawable="@drawable/sliderpushed"
         android:state_pressed="true"></item>
     <item
-        android:drawable="@drawable/sliderpushed"></item>
+        android:drawable="@drawable/slider"></item>
 </selector>
