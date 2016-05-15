@@ -25,6 +25,10 @@ public class ExercisesListener implements View.OnClickListener {
 
     @Override
     public void onClick(View view){
+        weight = (EditText) activity.findViewById(R.id.editWeight);
+        if (weight.getText().toString().isEmpty())
+            return;
+
         switch (view.getId()){
             case R.id.squatsExercise:
                 exerciseName = (TextView) activity.findViewById(R.id.squatsExercise);
@@ -36,7 +40,7 @@ public class ExercisesListener implements View.OnClickListener {
                 exerciseName = (TextView) activity.findViewById(R.id.deadliftExercise);
                 break;
         }
-        weight = (EditText) activity.findViewById(R.id.editWeight);
+
         training.changeLayer();
         training.linearView = (LinearLayout) activity.findViewById(R.id.exercisesList);
         addExercise(exerciseName.getText().toString(),
@@ -55,7 +59,7 @@ public class ExercisesListener implements View.OnClickListener {
         block.setLayoutParams(blockParams);
 
         TextView exerciseInfo = new TextView(activity);
-        exerciseInfo.setText(name + ". Weight is " + weight + "kgs");
+        exerciseInfo.setText(name + ". Weight is " + weight + "kg");
         exerciseInfo.setTextSize(24);
 
 

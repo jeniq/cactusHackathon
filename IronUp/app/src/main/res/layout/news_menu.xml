@@ -14,7 +14,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bench press championship up to 75 kg this Tuesday"
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
@@ -26,7 +25,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
@@ -35,7 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TestNews"
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
@@ -43,7 +40,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Text34 444 44444444444 444444"
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
@@ -51,7 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Text12 3123 3 asd as asd as"
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>
@@ -63,7 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tex t1asd 2 3123 3 asd as asd as"
-                android:background="#AABDBD"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"/>

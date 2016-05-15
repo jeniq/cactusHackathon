@@ -103,6 +103,9 @@ public class IronContinent extends Activity {
 
 
         // notifocations
+        button = (Button) findViewById(R.id.notificationsButton); // testing the notification
+        button.setBackgroundResource(R.drawable.notificationpicture_one_notification);
+        NotificationButtonListener.isNotification = true;
         notificationFragment = new NotificationFragment();
         notificationButtonListener = new NotificationButtonListener(this, notificationFragment);
         button = (Button) findViewById(R.id.notificationsButton);

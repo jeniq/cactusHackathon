@@ -2,12 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/newsFeedButtonID"
-        android:text="News"
+        android:text="  News"
         android:textColor="#FAFAFA"
         android:layout_marginLeft = "0dp"
         android:textSize="20sp"
@@ -16,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/statisticsButtonID"
-        android:text="Statistics"
+        android:text="* Statistics"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
         android:background="@drawable/toolbarbuttonspic"/>
@@ -25,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gymListButtonID"
-        android:text="GymList"
+        android:text="  GymList"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
         android:background="@drawable/toolbarbuttonspic"/>
@@ -36,7 +40,7 @@
         android:id="@+id/trainButtonID"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
-        android:text="train"
+        android:text="  train"
         android:background="@drawable/toolbarbuttonspic"/>
 
 
