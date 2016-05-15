@@ -2,6 +2,7 @@ package ua.kyiv.mykhailoivanov.ironcontinent.menus.gym_menu;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -27,7 +28,6 @@ public class GymMenu {
     public GymMenu(Activity activityIn)
     {
         activity = activityIn;
-        paramsButton = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
     }
 
@@ -55,13 +55,16 @@ public class GymMenu {
         while(gymsNum!=0)
         {
             Button gymButton = new Button(activity); // @TODO: SET BUTTON BACKGROUND
+            paramsButton = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             gymButton.setLayoutParams(paramsButton);
             gymName = SaveNLoad.getGymName(gymsNum);
             gymButton.setBackgroundResource(R.drawable.gymbtnpics);
 
             gymButton.setText(gymName);
-            gymButton.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT));
+            gymButton.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT));
 
+
+            gymButton.setTextSize(TypedValue.COMPLEX_UNIT_PX, 25);
             listLay.addView(gymButton);
             gymButton.setOnClickListener(new GymPickListener(activity, gymName, gymButton));
             gymsNum--;
