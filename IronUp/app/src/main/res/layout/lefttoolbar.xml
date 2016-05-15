@@ -7,25 +7,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/newsFeedButtonID"
-        android:text="news"
-        android:layout_marginLeft = "0dp"/>
+        android:text="News"
+        android:textColor="#FAFAFA"
+        android:layout_marginLeft = "0dp"
+        android:textSize="20sp"
+        android:background="@drawable/toolbarbuttonspic"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/statisticsButtonID"
-        android:text="statistics"/>
+        android:text="Statistics"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:background="@drawable/toolbarbuttonspic"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gymListButtonID"
-        android:text="gymList"/>
+        android:text="GymList"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:background="@drawable/toolbarbuttonspic"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/trainButtonID"
-        android:text="train"/>
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:text="train"
+        android:background="@drawable/toolbarbuttonspic"/>
 
 
 

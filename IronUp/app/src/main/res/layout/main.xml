@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#9E9E9E">
+        android:background="#424242">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/leftToolbarLayoutID"
-            android:background="#BDBDBD">
+            android:background="#757575">
             </LinearLayout>
 
             <LinearLayout
