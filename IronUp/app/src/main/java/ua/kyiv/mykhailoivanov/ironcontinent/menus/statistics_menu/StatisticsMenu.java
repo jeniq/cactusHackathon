@@ -3,11 +3,13 @@ package ua.kyiv.mykhailoivanov.ironcontinent.menus.statistics_menu;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.IronContinent;
 import ua.kyiv.mykhailoivanov.ironcontinent.R;
+import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.TopMemberListener;
 
 /**
  * Created by MykhailoIvanov on 5/14/2016.
@@ -25,6 +27,7 @@ public class StatisticsMenu {
     private View view;
     private LinearLayout linearLay;
     private ScrollView scrollView;
+    private Button button;
     public void show()
     {
 
@@ -47,7 +50,8 @@ public class StatisticsMenu {
                 }
                 else
                 {
-                    // @TODO: connect clicklistener
+                    button = (Button) linearLay.getChildAt(i);
+                    button.setOnClickListener(new TopMemberListener(activity, button));
                 }
             }
         }
