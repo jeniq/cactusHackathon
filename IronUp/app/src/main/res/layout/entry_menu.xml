@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Welcome at\nIron Continent"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="34sp"
+        android:layout_gravity="center"
+        android:paddingBottom="80dp"
+        android:textColor="#FAFAFA" />
+
+    <LinearLayout
+        style="@style/entryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FAFAFA"
+            android:id="@+id/emailTextView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailInput"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FAFAFA"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:id="@+id/passwordInput" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Enter"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FAFAFA"
+            android:id="@+id/enterButton"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingHandler;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingThread;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.entry_menu.Entry;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.gym_menu.GymMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu.LeftToolbarMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
@@ -56,6 +57,8 @@ public class IronContinent extends Activity {
     }
 
 
+    private Entry entry;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +68,15 @@ public class IronContinent extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
+        setContentView(R.layout.entry_menu);
+        entry = new Entry(this, this);
 
+
+
+    }
+
+    public void startApp()
+    {
         // TEST SAVING
         SaveNLoad.activity = this;
 //        SaveNLoad.saveGym("FitnessLife");
@@ -96,10 +107,5 @@ public class IronContinent extends Activity {
         notificationButtonListener = new NotificationButtonListener(this, notificationFragment);
         button = (Button) findViewById(R.id.notificationsButton);
         button.setOnClickListener(notificationButtonListener);
-
-        //
-
-
-
     }
 }
