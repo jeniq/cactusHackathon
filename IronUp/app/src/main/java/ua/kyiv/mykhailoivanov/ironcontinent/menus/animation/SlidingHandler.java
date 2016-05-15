@@ -23,15 +23,29 @@ public class SlidingHandler extends Handler {
         switch (message.what)
         {
             case 0:
-                theLayout.otherView.offsetLeftAndRight(slidingValue);
-                theLayout.toolbarView.offsetLeftAndRight(slidingValue);
-                theLayout.postInvalidate();
-                break;
-            case 1:
                 theLayout.otherView.offsetLeftAndRight(-slidingValue);
                 theLayout.toolbarView.offsetLeftAndRight(-slidingValue);
                 theLayout.postInvalidate();
                 break;
+            case 1:
+                theLayout.otherView.offsetLeftAndRight(slidingValue);
+                theLayout.toolbarView.offsetLeftAndRight(slidingValue);
+                theLayout.postInvalidate();
+                break;
+
+            case 11:
+                theLayout.activity.getNewsMenu().show();
+                break;
+            case 12:
+                theLayout.activity.getStatisticsMenu().show();
+                break;
+            case 13:
+                theLayout.activity.getGymMenu().show();
+                break;
+            case 14:
+                theLayout.activity.getTrainMenu().show();
+                break;
+
         }
     }
 }

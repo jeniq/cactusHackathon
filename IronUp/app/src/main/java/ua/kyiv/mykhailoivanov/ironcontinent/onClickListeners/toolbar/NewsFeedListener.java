@@ -19,8 +19,10 @@ public class NewsFeedListener implements View.OnClickListener {
     @Override
     public void onClick(View v)
     {
-        newsMenu.show();
-        SlidingThread.slideRight = true;
-        TheLayout.whichWayToSlide = 1;
+        SlidingThread.slideLeft = true;
+        TheLayout.whichWayToSlide = 0;
+
+        SlidingThread.menuNum = 1;
+
     }
 }

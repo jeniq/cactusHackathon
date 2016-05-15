@@ -15,6 +15,7 @@ import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.GymListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.NewsFeedListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.StatisticsListener;
+import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.TrainListener;
 
 /**
  * Created by MykhailoIvanov on 5/14/2016.
@@ -29,6 +30,7 @@ public class LeftToolbarMenu {
     private StatisticsListener statisticsListener;
     private GymListener gymListener;
     private IronContinent ironContinent;
+    private TrainListener trainListener;
 
     public LeftToolbarMenu(Activity activityIn, IronContinent ironContinentIn)
     {
@@ -43,6 +45,7 @@ public class LeftToolbarMenu {
         newsFeedListener = new NewsFeedListener(ironContinent.getNewsMenu());
         statisticsListener = new StatisticsListener(ironContinent.getStatisticsMenu());
         gymListener = new GymListener(ironContinent.getGymMenu());
+        trainListener = new TrainListener(ironContinent.getTrainMenu());
 
         button = (Button) activity.findViewById(R.id.newsFeedButtonID);
         button.setOnClickListener(newsFeedListener);
@@ -52,6 +55,9 @@ public class LeftToolbarMenu {
 
         button = (Button) activity.findViewById(R.id.gymListButtonID);
         button.setOnClickListener(gymListener);
+
+        button = (Button) activity.findViewById(R.id.trainButtonID);
+        button.setOnClickListener(trainListener);
 
         // @TODO: FINISH 3 MENUS
     }

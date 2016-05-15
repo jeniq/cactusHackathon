@@ -4,19 +4,17 @@ import android.view.View;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.TheLayout;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingThread;
-import ua.kyiv.mykhailoivanov.ironcontinent.menus.gym_menu.GymMenu;
-import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.TrainMenu;
 
 /**
- * Created by MykhailoIvanov on 5/14/2016.
+ * Created by MykhailoIvanov on 5/15/2016.
  */
-public class GymListener implements View.OnClickListener {
-    private GymMenu gymMenu;
+public class TrainListener  implements View.OnClickListener {
+    private TrainMenu trainMenu;
 
-
-    public GymListener(GymMenu gymMenuInput)
+    public TrainListener(TrainMenu trainMenuIn)
     {
-        gymMenu = gymMenuInput;
+        trainMenu = trainMenuIn;
     }
     @Override
     public void onClick(View v)
@@ -24,8 +22,6 @@ public class GymListener implements View.OnClickListener {
         SlidingThread.slideLeft = true;
         TheLayout.whichWayToSlide = 0;
 
-        SlidingThread.menuNum = 3;
-
-
+        SlidingThread.menuNum = 4;
     }
 }

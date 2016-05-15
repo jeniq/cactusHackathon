@@ -22,13 +22,13 @@ public class TheLayout extends LinearLayout {
         super(context, attrs);
     }
 
-    private Activity activity;
+    public IronContinent activity;
     public View toolbarView;
     public View otherView;
     public static int menuMargin;
     public static  int whichWayToSlide;
 
-    public void setActivity(Activity activityInput, int width)
+    public void setActivity(IronContinent activityInput, int width)
     {
         menuMargin = (int) (width*0.2);
         activity = activityInput;
@@ -55,8 +55,8 @@ public class TheLayout extends LinearLayout {
             calculateChildDimensions();
 
 
-        otherView.layout(left + (int)(0.8*menuMargin/0.2), top,  right + (int)(0.8*menuMargin/0.2), bottom);
-        toolbarView.layout(left, top, right, bottom);
+        otherView.layout(left, top,  right, bottom);
+        toolbarView.layout(left - (int)(0.8*menuMargin/0.2), top, right - (int)(0.8*menuMargin/0.2), bottom);
 
     }
 

@@ -14,6 +14,7 @@ import ua.kyiv.mykhailoivanov.ironcontinent.menus.left_toolbar_menu.LeftToolbarM
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.notifications_fragment.NotificationFragment;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.statistics_menu.StatisticsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.TrainMenu;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.NotificationButtonListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.SliderButtonListener;
 
@@ -29,6 +30,7 @@ public class IronContinent extends Activity {
     private NewsMenu newsMenu;
     private StatisticsMenu statisticsMenu;
     private GymMenu gymMenu;
+    private TrainMenu trainMenu;
 
     private NotificationFragment notificationFragment;
     private NotificationButtonListener notificationButtonListener;
@@ -46,6 +48,11 @@ public class IronContinent extends Activity {
     public GymMenu getGymMenu()
     {
         return gymMenu;
+    }
+
+    public TrainMenu getTrainMenu()
+    {
+        return trainMenu;
     }
 
 
@@ -66,6 +73,7 @@ public class IronContinent extends Activity {
         newsMenu = new NewsMenu(this);
         statisticsMenu = new StatisticsMenu(this);
         gymMenu = new GymMenu(this);
+        trainMenu = new TrainMenu(this);
 
         theLayout = (TheLayout) getLayoutInflater().inflate(R.layout.main, null);
         theLayout.setActivity(this, getWindowManager().getDefaultDisplay().getWidth());
