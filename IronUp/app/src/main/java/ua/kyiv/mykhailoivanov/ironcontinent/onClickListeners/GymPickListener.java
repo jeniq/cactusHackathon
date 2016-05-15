@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
 
+import ua.kyiv.mykhailoivanov.ironcontinent.R;
 import ua.kyiv.mykhailoivanov.ironcontinent.TheLayout;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingThread;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.gym_menu.GymMenu;
@@ -27,7 +28,13 @@ public class GymPickListener  implements View.OnClickListener {
     {
         // @TODO: SET BUTTON BACKGROUND with star, and make prev current with no star
 
+        if (GymMenu.currentGymButton!=null)
+        {
+            GymMenu.currentGymButton.setBackgroundResource(R.drawable.gymbtnpics);
+        }
+
         GymMenu.currentGymButton = button;
         GymMenu.currentGymName = gymName;
+        GymMenu.currentGymButton.setBackgroundResource(R.drawable.gymbuttonpressed);
     }
 }

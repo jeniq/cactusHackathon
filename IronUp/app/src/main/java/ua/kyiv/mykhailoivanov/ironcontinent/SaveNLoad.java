@@ -28,7 +28,7 @@ public class SaveNLoad {
     {
         mSettings = activity.getSharedPreferences(Integer.toString(id), activity.MODE_PRIVATE);
 
-        return mSettings.getString(Integer.toString(id), "");
+        return mSettings.getString(Integer.toString(id), null);
     }
     public static int num;
     public static void saveGym(String name)
@@ -46,6 +46,7 @@ public class SaveNLoad {
             mSettings = activity.getSharedPreferences(Integer.toString(num), activity.MODE_PRIVATE);
             editor = mSettings.edit();
             editor.putString(Integer.toString(num), name);
+            editor.apply();
         }
         else
         {
@@ -57,6 +58,7 @@ public class SaveNLoad {
             mSettings = activity.getSharedPreferences(Integer.toString(num), activity.MODE_PRIVATE);
             editor = mSettings.edit();
             editor.putString(Integer.toString(num), name);
+            editor.apply();
         }
     }
 }

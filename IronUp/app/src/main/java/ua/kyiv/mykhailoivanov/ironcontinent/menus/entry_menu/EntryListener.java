@@ -30,10 +30,12 @@ public class EntryListener implements View.OnClickListener {
         email = (EditText) activity.findViewById(R.id.emailInput);
         password = (EditText) activity.findViewById(R.id.passwordInput);
 
-        if (entry.login.equals(email.getText().toString())
-                && entry.password.equals(password.getText().toString())){
+        if ((entry.adminLogin.equals(email.getText().toString())
+                && entry.adminPassword.equals(password.getText().toString()))
+                || (entry.userLogin.equals(email.getText().toString())
+                && entry.userPassword.equals(password.getText().toString()))){
 
-            entry.enterToApp();
+            entry.enterToApp(true);
         }else{
             Toast.makeText(activity, "Wrong email or password!", Toast.LENGTH_SHORT).show();
         }
