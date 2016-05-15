@@ -4,15 +4,16 @@ import android.view.View;
 
 import ua.kyiv.mykhailoivanov.ironcontinent.TheLayout;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.animation.SlidingThread;
-import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.TrainMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.Training;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.TrainingMenu;
 
 /**
  * Created by MykhailoIvanov on 5/15/2016.
  */
 public class TrainListener  implements View.OnClickListener {
-    private TrainMenu trainMenu;
+    private TrainingMenu trainMenu;
 
-    public TrainListener(TrainMenu trainMenuIn)
+    public TrainListener(TrainingMenu trainMenuIn)
     {
         trainMenu = trainMenuIn;
     }

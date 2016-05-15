@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/logo"/>
 
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/statisticsButtonID"
-        android:text="* Statistics"
+        android:text="  Statistics"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
         android:background="@drawable/toolbarbuttonspic"/>

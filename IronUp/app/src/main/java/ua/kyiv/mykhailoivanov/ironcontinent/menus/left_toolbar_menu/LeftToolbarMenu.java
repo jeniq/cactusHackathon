@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import ua.kyiv.mykhailoivanov.ironcontinent.IronContinent;
 import ua.kyiv.mykhailoivanov.ironcontinent.R;
 import ua.kyiv.mykhailoivanov.ironcontinent.menus.news_menu.NewsMenu;
+import ua.kyiv.mykhailoivanov.ironcontinent.menus.training_menu.TrainingHistoryListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.GymListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.NewsFeedListener;
 import ua.kyiv.mykhailoivanov.ironcontinent.onClickListeners.toolbar.StatisticsListener;

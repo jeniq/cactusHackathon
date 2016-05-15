@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:background="@drawable/entry_photo">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
             android:text="Email:"
             android:textSize="24sp"
             android:fontFamily="sans-serif-medium"
-            android:textColor="#000000"
+            android:textColor="#FAFAFA"
             android:id="@+id/emailTextView" />
 
         <EditText
@@ -37,7 +38,7 @@
             android:inputType="textEmailAddress"
             android:id="@+id/emailInput"
             android:textSize="22sp"
-            android:textColor="#000000"
+            android:textColor="#FAFAFA"
             android:layout_gravity="center_vertical"/>
 
         <TextView
@@ -47,14 +48,14 @@
             android:text="Password:"
             android:textSize="24sp"
             android:fontFamily="sans-serif-medium"
-            android:textColor="#000000"
+            android:textColor="#FAFAFA"
             android:id="@+id/textView2" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:inputType="textPassword"
-            android:textColor="#000000"
+            android:textColor="#FAFAFA"
             android:id="@+id/passwordInput" />
 
         <Button
@@ -64,7 +65,7 @@
             android:text="Enter"
             android:textSize="24sp"
             android:fontFamily="sans-serif-medium"
-            android:textColor="#000000"
+            android:textColor="#FAFAFA"
             android:id="@+id/enterButton"
             android:background="@android:color/transparent"
             android:layout_gravity="center_horizontal" />

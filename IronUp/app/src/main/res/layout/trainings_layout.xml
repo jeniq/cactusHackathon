@@ -6,34 +6,33 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/newExerciseButton"
+        android:id="@+id/newTrainingButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#F5F5F5"
-        android:text="Add exercise"
+        android:text="new Training"
         android:textColor="#424242"
         android:textSize="22sp" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="Today training"
+        android:padding="4dp"
         android:textColor="#9E9E9E"
+        android:text="Trainings history"
         android:textSize="26sp" />
 
     <ScrollView
         android:id="@+id/scrollTrainingHistory"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7">
+        android:layout_weight="9">
 
         <LinearLayout
-            android:id="@+id/exercisesList"
+            android:id="@+id/trainingsHistoryList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -41,16 +40,6 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/endTrainingButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#F5F5F5"
-        android:text="End training"
-        android:textColor="#424242"
-        android:textSize="22sp" />
 
 
 </LinearLayout>

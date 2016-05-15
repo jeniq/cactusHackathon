@@ -27,6 +27,8 @@ public class GymMenu {
     public GymMenu(Activity activityIn)
     {
         activity = activityIn;
+        paramsButton = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
     }
 
     public void show()
@@ -44,6 +46,7 @@ public class GymMenu {
         uploadList();
     }
 
+    private LinearLayout.LayoutParams paramsButton;
     private String gymName;
     public void uploadList()
     {
@@ -52,7 +55,9 @@ public class GymMenu {
         while(gymsNum!=0)
         {
             Button gymButton = new Button(activity); // @TODO: SET BUTTON BACKGROUND
+            gymButton.setLayoutParams(paramsButton);
             gymName = SaveNLoad.getGymName(gymsNum);
+            gymButton.setBackgroundResource(R.drawable.gymbtnpics);
 
             gymButton.setText(gymName);
             gymButton.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT));

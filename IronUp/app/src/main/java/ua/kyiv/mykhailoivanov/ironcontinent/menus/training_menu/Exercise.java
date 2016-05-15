@@ -12,12 +12,11 @@ public class Exercise {
     int weight; // current approach in exercise
     int quantity;
     Activity activity;
-    ChoiceExercise exerciseList;
     ExercisesListener exercisesListener;
-    TrainMenu training;
+    Training training;
     TextView exerciseName;
 
-    public Exercise(Activity activity, TrainMenu training){
+    public Exercise(Activity activity, Training training){
         this.activity = activity;
         this.training = training;
         exercisesListener = new ExercisesListener(activity, training);

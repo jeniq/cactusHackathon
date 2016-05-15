@@ -2,47 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <EditText
         android:id="@+id/editWeight"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Enter weight"
-        android:textSize="22sp"
-        android:layout_marginTop="4dp"
         android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
         android:gravity="center"
-        android:inputType="number"/>
+        android:hint="Enter weight and choice exercise"
+        android:inputType="number"
+        android:textSize="22sp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Squats"
         android:id="@+id/squatsExercise"
-        android:textSize="24sp"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
-
-    <TextView
+        style="@style/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Barbell bench press"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Squats"
+        android:textSize="24sp" />
+
+    <TextView
         android:id="@+id/barbellBenchPressExercise"
-        android:textSize="24sp"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
-
-    <TextView
+        style="@style/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Deadlift"
+        android:fontFamily="sans-serif-medium"
+        android:text="Barbell bench press"
+        android:textSize="26sp" />
+
+    <TextView
         android:id="@+id/deadliftExercise"
-        android:textSize="24sp"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
+        style="@style/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Deadlift"
+        android:textSize="26sp" />
 
 </LinearLayout>
