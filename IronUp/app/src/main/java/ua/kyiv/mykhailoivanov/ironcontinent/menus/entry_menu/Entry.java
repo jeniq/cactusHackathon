@@ -10,8 +10,10 @@ import ua.kyiv.mykhailoivanov.ironcontinent.R;
  * Created by MykhailoIvanov on 5/15/2016.
  */
 public class Entry {
-    static String login;
-    static String password;
+    static String adminLogin;
+    static String adminPassword;
+    static String userLogin;
+    static String userPassword;
     Activity activity;
     EntryListener entryListener;
     Button enter;
@@ -19,14 +21,16 @@ public class Entry {
 
     public Entry(Activity activity, IronContinent ironContinentIn){
         ironContinent = ironContinentIn;
-        login = "admin";
-        password = "admin";
+        adminLogin = "admin";
+        adminPassword = "admin";
+        userLogin = "user";
+        userPassword = "user";
         this.activity = activity;
         entryListener = new EntryListener(this.activity, this);
         appendLister();
     }
 
-    void enterToApp(){
+    void enterToApp(boolean admin){
         ironContinent.startApp();
     }
 
